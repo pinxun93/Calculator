@@ -47,6 +47,8 @@ namespace Calculator
             this.btnZero = new System.Windows.Forms.Button();
             this.btnEqual = new System.Windows.Forms.Button();
             this.btnDot = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.btnPercent = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnClear
@@ -246,11 +248,35 @@ namespace Calculator
             this.btnDot.UseVisualStyleBackColor = true;
             this.btnDot.Click += new System.EventHandler(this.btnDot_Click);
             // 
+            // btnBack
+            // 
+            this.btnBack.Font = new System.Drawing.Font("新細明體", 15F);
+            this.btnBack.Location = new System.Drawing.Point(51, 206);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(112, 48);
+            this.btnBack.TabIndex = 18;
+            this.btnBack.Text = "<<";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // btnPercent
+            // 
+            this.btnPercent.Font = new System.Drawing.Font("新細明體", 15F);
+            this.btnPercent.Location = new System.Drawing.Point(51, 380);
+            this.btnPercent.Name = "btnPercent";
+            this.btnPercent.Size = new System.Drawing.Size(112, 48);
+            this.btnPercent.TabIndex = 19;
+            this.btnPercent.Text = "%";
+            this.btnPercent.UseVisualStyleBackColor = true;
+            this.btnPercent.Click += new System.EventHandler(this.btnPercent_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnPercent);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnDot);
             this.Controls.Add(this.btnEqual);
             this.Controls.Add(this.btnZero);
@@ -296,6 +322,8 @@ namespace Calculator
         private System.Windows.Forms.Button btnZero;
         private System.Windows.Forms.Button btnEqual;
         private System.Windows.Forms.Button btnDot;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnPercent;
     }
 }
 
